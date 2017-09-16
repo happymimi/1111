@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style-type: none;
+		}
+		ul{
+			width: 1000px;
+			margin: 0 auto;
+			border: 1px solid #b6b6b6;
+		}
+		ul:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		ul li{
+			box-sizing: border-box;
+			width: 250px;
+			height: 350px;
+			padding: 10px 20px;
+			box-shadow: 0 0 5px #b6b6b6; 
+			float: left;
+
+		}
+
+		ul li img{
+			width: 100%;
+		}
+		ul li p{
+		 	line-height: 50px;
+
+		}
+		ul li h3{
+			color: #f10;
+		}
+	</style>
+</head>
+<body>
+	<ul id="list">
+		
+	</ul>
+</body>
+<script>
+	var json = [
+		{ 
+			img:"https://img12.360buyimg.com/n4/s260x260_jfs/t2146/227/2997625258/167840/30e3c19c/572201caN0397f071.jpg",
+			title:"商品1",
+			price:198,
+			id:1
+		},
+		{
+	 		img:"https://img12.360buyimg.com/n4/s260x260_jfs/t2761/158/1698018452/54996/884fbdad/5746d3b8N389f44e8.jpg",
+	 		title:"商品2",
+	 		price:298,
+	 		id:2
+	 	},
+	 	{
+	 		img:"https://img13.360buyimg.com/n4/s260x260_jfs/t3019/347/1929231176/128296/f4ea1272/57ce6e6eN1a8750ff.jpg",
+	 		title:"商品3",
+	 		price:398,
+	 		id:3
+	 	},
+	 	{
+ 		img:"https://img12.360buyimg.com/n4/s260x260_jfs/t2644/275/1295358287/272585/65c70ea3/573aad05Nba66c04a.jpg",
+	 		title:"商品4",
+	 		price:498,
+	 		id:4
+	 	},
+	 	{
+	 		img:"https://img12.360buyimg.com/n4/s260x260_jfs/t3097/202/5584401538/74155/b2759298/5874b1b0N33a225ab.jpg",
+	 		title:"商品5",
+	 		price:598,
+	 		id:5
+	 	}
+
+	]
+</script>
+<script type="text/javascript">
+	var oUl = document.getElementById("list");
+	var html = "";
+	var (i=0;i<10;i++){
+		html += '<li><img src="https://img12.360buyimg.com/n4/s260x260_jfs/t2146/227/2997625258/167840/30e3c19c/572201caN0397f071.jpg"/><p>商品1</p><h3>198</h3></li>'
+		oUl.innerHTML = html;
+	}
+	
+</script>
+</html>
